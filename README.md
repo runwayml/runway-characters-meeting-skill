@@ -6,10 +6,6 @@
 The character joins as a real participant tile — sees the room, hears everything, and
 responds live with lip-synced video, voice, and expressions.
 
-**Latency:** ~1.5 seconds — feels like a real video call.
-**Languages:** Speaks any language — just tell it in the personality.
-**Cost:** ~$0.20/min of active session (1 credit = 3 seconds, 1 credit = $0.01), billed to your Runway account.
-
 ---
 
 ## Quick Start
@@ -28,7 +24,7 @@ python scripts/runway_meeting.py clone-yourself \
   --name        "Yining" \
   --selfie      /path/to/selfie.jpg \
   --voice-audio /path/to/voice-clip.m4a \
-  --personality "You are Yining, a PM at Runway. Be concise."
+  --personality "You are Yining, a PM at Runway."
 
 # 4. Send it to a meeting
 python scripts/runway_meeting.py join \
@@ -126,7 +122,7 @@ Use these as `--preset-id` with `--avatar-type runway-preset` for instant testin
 
 ## Agent Integration
 
-1. Point your agent at this directory
+1. Point your agent at this skill: https://github.com/runwayml/runway-characters-meeting-skill
 2. Set `RUNWAYML_API_SECRET` in your environment
 3. The agent reads `SKILL.md` and activates automatically when you share a meeting link
 
